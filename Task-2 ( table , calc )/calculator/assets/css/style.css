@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #000000;
+    --secondery-color: #444444;
+    --main-color: #ff7f00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.content {
+    width: 700px;
+    margin: auto;
+}
+
+.content .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.content .calc {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.content .calc .result {
+    background-color: var(--secondery-color);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 0;
+    direction: rtl;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.flex button {
+    width: calc(96% / 4);
+    margin-top: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 13px 0;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+    color: white;
+}
+
+.arithmetic-operation button:not(:last-child) {
+    background-color: var(--secondery-color);
+}
+
+.arithmetic-operation button:last-child,
+.flex button:last-child {
+    background-color: var(--main-color);
+}
+
+.numbers button:not(:last-child),
+.last-buttons button:not(:nth-child(3)) {
+    background-color: var(--primary-color);
+}
+
+.last-buttons button:nth-child(3) {
+    background-color: var(--main-color);
+}
