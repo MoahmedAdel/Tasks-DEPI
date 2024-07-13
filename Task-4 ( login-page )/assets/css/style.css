@@ -118,6 +118,7 @@ body {
     background-color: var(--border-color);
     color: var(--white-color);
     transition: .2s;
+    cursor: pointer;
 }
 
 .main-login form .btn-primary:hover {
