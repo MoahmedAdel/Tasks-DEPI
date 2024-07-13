@@ -1,0 +1,161 @@
+:root {
+    --container-width: 80%;
+    --content-width: 300px;
+    --main-color: #251d5a;
+    --white-color: white;
+    --danger-color: rgb(163, 1, 1);
+    --border-color: #815964;
+    --hover-color: #6d4651;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: var(--container-width);
+    height: 100%;
+    margin: auto;
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imgs/background .jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-login {
+    width: 350px;
+    background-color: var(--main-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.header-login,
+.main-login,
+.footer-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-login .image {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.header-login .title {
+    text-align: center;
+    margin-top: 7px;
+    color: var(--white-color);
+    font-size: 28px;
+}
+
+.main-login {
+    margin-top: 20px;
+}
+
+.main-login form {
+    width: 100%;
+}
+
+.main-login form label {
+    color: var(--white-color);
+}
+
+.main-login form label .required {
+    color: var(--danger-color);
+}
+
+.main-login form .input {
+    position: relative;
+    margin-top: 5px;
+}
+
+.main-login form .input input {
+    width: -webkit-fill-available;
+    height: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0;
+}
+
+.main-login form .input i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.main-login form .password {
+    margin-top: 20px;
+}
+
+.main-login form .btn-primary {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: var(--border-color);
+    color: var(--white-color);
+    transition: .2s;
+}
+
+.main-login form .btn-primary:hover {
+    letter-spacing: 3px;
+    background-color: var(--hover-color);
+}
+
+.footer-login {
+    margin-top: 20px;
+}
+
+.footer-login p,
+.footer-login p a {
+    color: white;
+}
+
+.footer-login p a {
+    transition: .2s
+}
+
+.footer-login p a:hover {
+    color: var(--border-color);
+}
+
+.footer-login .create-account {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-login .create-account a {
+    text-decoration: none;
+    color: var(--border-color);
+    font-size: 18px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.footer-login .create-account a:hover{
+    color: var(--hover-color);
+}
